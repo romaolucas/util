@@ -1,0 +1,6 @@
+colorschemes
+jedi-vim
+nerdtree
+syntastic
+vim-airline
+vim-fugitive
