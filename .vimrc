@@ -1,6 +1,6 @@
 set nu
 syntax on
-set autoindent 
+set autoindent
 set smartindent
 set ruler
 set ts=4
@@ -12,15 +12,13 @@ set expandtab
 execute pathogen#infect()
 filetype plugin indent on
 autocmd vimenter * NERDTree
-call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 colorscheme candyman
-
-" Octave syntax 
-augroup filetypedetect 
-  au! BufRead,BufNewFile *.m,*.oct set filetype=octave 
+" Octave syntax
+augroup filetypedetect
+au! BufRead,BufNewFile *.m,*.oct set filetype=octave
 augroup END
-
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#goto_assignments_command = "<leader>g"
